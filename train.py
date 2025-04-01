@@ -7,7 +7,7 @@
 # --------------------------------------------------------
 from mast3r.model import AsymmetricMASt3R
 from mast3r.losses import ConfMatchingLoss, MatchingLoss, APLoss, Regr3D, InfoNCE, Regr3D_ScaleShiftInv
-from mast3r.datasets import ARKitScenes, BlendedMVS, Co3d, MegaDepth, ScanNetpp, StaticThings3D, Waymo, WildRGBD
+from mast3r.datasets import ARKitScenes, BlendedMVS, Co3d, MegaDepth, ScanNetpp, StaticThings3D, Waymo, WildRGBD, Phototourism
 
 import mast3r.utils.path_to_dust3r  # noqa
 # add mast3r classes to dust3r imports
@@ -21,14 +21,15 @@ dust3r.training.InfoNCE = InfoNCE
 dust3r.training.APLoss = APLoss
 
 import dust3r.datasets
-dust3r.datasets.ARKitScenes = ARKitScenes
-dust3r.datasets.BlendedMVS = BlendedMVS
-dust3r.datasets.Co3d = Co3d
-dust3r.datasets.MegaDepth = MegaDepth
-dust3r.datasets.ScanNetpp = ScanNetpp
-dust3r.datasets.StaticThings3D = StaticThings3D
-dust3r.datasets.Waymo = Waymo
-dust3r.datasets.WildRGBD = WildRGBD
+# dust3r.datasets.ARKitScenes = ARKitScenes
+# dust3r.datasets.BlendedMVS = BlendedMVS
+# dust3r.datasets.Co3d = Co3d
+# dust3r.datasets.MegaDepth = MegaDepth
+# dust3r.datasets.ScanNetpp = ScanNetpp
+# dust3r.datasets.StaticThings3D = StaticThings3D
+# dust3r.datasets.Waymo = Waymo
+# dust3r.datasets.WildRGBD = WildRGBD
+dust3r.datasets.phototourism = Phototourism
 
 from dust3r.training import get_args_parser as dust3r_get_args_parser  # noqa
 from dust3r.training import train  # noqa
