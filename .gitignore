@@ -133,3 +133,9 @@ checkpoints/
 
 # pre-calculated repository
 asmk/
+
+# Maintanence files
+import_know_poses.py
+triangulate_point.sh
+pycolmap_triangulate_dl3dv.py
+pycolmap_triangulate_re10k.py
