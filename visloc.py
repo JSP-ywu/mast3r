@@ -65,8 +65,6 @@ def get_args_parser():
     parser.add_argument("--viz_matches", type=int, default=0, help="debug matches")
 
     parser.add_argument("--output_dir", type=str, default=None, help="output path")
-    parser.add_argument("--output_label", type=str, default='', help="prefix for results files")
-    return parser
 
 
 @torch.no_grad()
